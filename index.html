@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tcc dos crias</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="img/Logo.png" />
+</head>
+<body>
+   <Main>
+       <header>
+           <div class="Logo"><img src="img/Logo.png" alt="Logo" class="LogoImg"></div>
+           <nav>
+               <ul>
+                   <li id="ListDesc"><button class="ButtonHeaderDesc">Descrição</button></li>
+                   <li><button class="ButtonHeaderQS">Quem somos</button></li>
+               </ul>
+           </nav>
+       </header>
+    <div class="container">
+        <div class="caixas">
+            <div class="caixaAlta">
+                <div class="caixaPrimaria">
+                    <img src="img/temperatura-removebg.png" alt="Clima" id="Temperatura">
+                    <div class="caixaPrimariaDentro">
+                        <div class="text_temp_div"><p id="text_temp"></p></div>
+                        <div class="button_temp"><button id="TemperaturaBotão">i</button></div>
+                    </div>
+                </div>
+                <div class="caixaSecundaria">
+                    <img src="img/Co2.png" alt="Co2" id="Co2_Img">
+                    <div class="caixaSecundariaDentro">
+                        <div class="text_Co2_div"><p id="text_Co2"> </p></div>
+                        <div class="button_Co2"><button id="Co2Botão">i</button></div>
+                    </div>
+                </div>
+            </div>
+            <div class="caixaMeio">
+                <div class="caixaTerceira">
+                    <img src="img/TVOC (2).png" alt="Tvoc" id="Tvoc">
+                    <div class="caixaTerceiraDentro">
+                        <div class="Div_Text_Tvoc"><p id="text_Tvoc"></p></div>
+                        <div class="button_Tvoc"><button id="TvocBotão">i</button></div>
+                    </div>
+                </div>
+                <div class="caixaQuarta">
+                    <img src="img/Bateria.png" alt="Bateria" id="bateria_Img">
+                    <div class="caixaQuartaDentro">
+                        <div class="Div_Text_bateria"><p id="text_bateria"></p></div>
+                        <div class="button_bateria"><button id="bateriaBotão">i</button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="Direitos">
+                <p id="Copyright">Eduardo Gomes Copyright © 2024 Todos os direitos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</Main>
+
+    <dialog class="Modal-temp">
+    
+        <p class="paragrafo-principal">
+            A medição de temperatura é um processo fundamental em diversas áreas, desde o controle de processos industriais até a previsão do clima. Existem diferentes técnicas para medir a temperatura, cada uma adequada a diferentes situações.
+
+Uma das técnicas mais comuns é o uso de termômetros, que podem ser de mercúrio, álcool, ou digitais. Os termômetros de mercúrio e álcool funcionam pela expansão e contração do líquido dentro de um tubo de vidro, enquanto os digitais convertem a variação de temperatura em sinais elétricos que são mostrados em uma tela.
+
+Outra técnica amplamente utilizada é a termopar, que consiste em dois fios metálicos diferentes conectados em duas extremidades. Quando há uma diferença de temperatura entre essas extremidades, uma diferença de potencial elétrico é gerada, permitindo calcular a temperatura.
+
+Também existem termorresistências, como os RTDs (do inglês Resistance Temperature Detectors), que são sensores que se baseiam na variação da resistência elétrica com a temperatura. Eles são comumente feitos de materiais como platina, níquel ou cobre.
+
+Além disso, há os termômetros infravermelhos, que medem a radiação infravermelha emitida por um objeto e a convertem em uma leitura de temperatura. Eles são úteis em situações em que o contato direto com o objeto é difícil ou perigoso.
+
+Por fim, os pirômetros ópticos são utilizados para medir a temperatura de objetos extremamente quentes, como em processos industriais. Eles funcionam detectando a radiação térmica emitida pelo objeto e convertendo-a em uma temperatura.
+
+Essas são apenas algumas das técnicas comuns de medição de temperatura, cada uma adequada a diferentes contextos e requisitos de precisão.
+        </p>
+        <p class="Paragrafo-Button">
+            <button class="ButtonCloseTemp" id="ButtonFechar">Fechar</button>
+            </p>
+    </dialog>
+
+    <dialog class="Modal-co2">
+    
+        <p class="paragrafo-principal">
+            A medição do dióxido de carbono (CO2) é realizada para determinar a concentração desse gás em uma determinada amostra ou ambiente. Essa medição é importante em várias áreas, incluindo controle de qualidade do ar, segurança ocupacional, monitoramento ambiental e controle de processos industriais.
+
+Para medir o CO2, são utilizados dispositivos chamados de analisadores de CO2. Esses dispositivos podem variar em termos de tecnologia e design, mas o princípio básico de operação é semelhante.
+
+Geralmente, os analisadores de CO2 funcionam detectando as moléculas de CO2 presentes na amostra e convertendo essa detecção em um sinal elétrico ou óptico mensurável.
+        </p>
+        <p class="Paragrafo-Button">
+            <button class="ButtonCloseCo2" id="ButtonFechar">Fechar</button>
+        </p>
+    </dialog>
+
+    <dialog class="Modal-Tvoc">
+    
+        <p class="paragrafo-principal">
+            o TVOC (Total Volatile Organic Compounds) é uma medida que quantifica a quantidade total de compostos orgânicos voláteis presentes em um ambiente. Esses compostos podem incluir uma variedade de substâncias químicas orgânicas que têm a capacidade de evaporar em condições normais de temperatura e pressão.
+
+Para medir o TVOC, é utilizado um dispositivo conhecido como sensor de TVOC, que geralmente é baseado em tecnologias como sensores eletroquímicos, sensores de semicondutores ou sensores de fotoionização. Esses sensores detectam a presença de compostos orgânicos voláteis no ar através de interações específicas entre as moléculas dos compostos e o material sensor.
+
+Os valores de TVOC são frequentemente expressos em partes por milhão (ppm) ou microgramas por metro cúbico (µg/m³). Um nível baixo de TVOC é geralmente considerado seguro para a saúde humana, enquanto níveis elevados podem indicar a presença de poluentes atmosféricos ou emissões de substâncias químicas nocivas.
+
+A medição do TVOC é importante em diversos contextos, como em ambientes internos para avaliar a qualidade do ar, em processos industriais para monitorar a emissão de poluentes e em ambientes de trabalho para garantir a segurança dos trabalhadores em relação à exposição a substâncias químicas voláteis.
+
+
+        </p>
+        <p class="Paragrafo-Button">
+            <button class="ButtonCloseTvoc" id="ButtonFechar">Fechar</button>
+        </p>
+    </dialog>
+
+    <dialog class="Modal-bateria">
+    
+        <p class="paragrafo-principal">
+            Nossa bateria possui 3300 mAh onde nosso sensores teram autonomia de mais de 11 horas.
+        </p>
+        <p class="Paragrafo-Button">
+            <button class="ButtonClosebateria" id="ButtonFechar">Fechar</button>
+        </p>
+</dialog>
+
+<dialog class="Modal-Desc">
+    
+    <p class="paragrafo-principal">
+           Nosso produto é projetado para promover a qualidade da saúde humana, oferecendo uma solução abrangente de monitoramento ambiental. Além de detectar e quantificar os compostos orgânicos voláteis totais (TVOCs) presentes no ambiente, também realizamos medições precisas de dióxido de carbono (CO2), um indicador crucial da qualidade do ar interior. Além disso, fornecemos informações sobre outros fatores atmosféricos, incluindo temperatura do ar, para garantir o conforto e a segurança de nossos clientes em todos os aspectos do ambiente em que vivem ou trabalham. Nosso compromisso é oferecer uma solução completa e confiável para promover ambientes mais saudáveis e seguros para todos.
+    </p>
+
+    <div class="imgDesc"><img src="#" alt="Nosso sensor"></div>
+    <p class="Paragrafo-Button">
+        <button class="ButtonCloseDesc" id="ButtonFechar">Fechar</button>
+    </p>
+</dialog>
+
+<dialog class="Modal-QS">
+    
+    <span class="paragrafoMFotos">
+           <img src="img/Matheus.jpeg" alt="Matheus" class="grupoimg">
+           <span>Matheus Cordeiro Cavalcante </span>
+           <a target="_blank" href="https://www.linkedin.com/in/matheus-cordeiro-cavalcante-4268a9297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="img/linkedin.jpg" alt="linkedin" class="linkedinimg"></a> 
+    </span>
+    <span class="paragrafoMFotos">
+        <img src="img/murilo.jpeg" alt="Murilo" class="grupoimg">
+        <span>Murilo Henrique Alves de Oliveira</span>
+        <a target="_blank" href="https://www.linkedin.com/in/murilo-henrique-alves-de-oliveira-407147305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="img/linkedin.jpg" alt="linkedin" class="linkedinimg"></a> 
+    </span>
+
+ 
+    <span class="paragrafoMFotos">
+    <img src="img/Danilo.jpeg" alt="Danilo" class="grupoimg">
+    <span>Danilo Navarro de Oliveira </span>
+    <a target="_blank" href="https://www.linkedin.com/in/danilo-navarro-b0b25a268?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="img/linkedin.jpg" alt="linkedin" class="linkedinimg"></a> 
+    </span>
+
+<span class="paragrafoMFotos">
+    <img src="img/Eduardo.jpeg" alt="Eduardo" class="grupoimg">
+    <span>Eduardo Gomes Felipe</span>
+    <a target="_blank" href="https://www.linkedin.com/in/eduardo-gomes-felipe-62567b252?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="img/linkedin.jpg" alt="linkedin" class="linkedinimg"></a> 
+</span>
+    <p class="Paragrafo-Button">
+        <button class="ButtonCloseQuemSomos" id="ButtonFechar">Fechar</button>
+    </p>
+</dialog>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
